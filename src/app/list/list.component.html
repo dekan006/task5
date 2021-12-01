@@ -1,0 +1,5 @@
+<ul class="list-group">
+    <app-list-item  [user]="user" [index]="i" *ngFor="let user of userList; index as i"></app-list-item>
+  </ul>
+
+  <button type="button" class="btn btn-danger" (click)="delete()">Delete</button>

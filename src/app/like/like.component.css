@@ -1,0 +1,10 @@
+
+button, p {
+    margin: 20px;
+}
+
+p {
+    font-size: 2em;
+    font-weight: 700;
+    padding-left: 60px;
+}
