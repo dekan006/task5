@@ -6,6 +6,7 @@ import { LikeComponent } from './like/like.component';
 import { HelloComponent } from './hello/hello.component';
 import { ListComponent } from './list/list.component';
 import { ListItemComponent } from './list-item/list-item.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ListItemComponent } from './list-item/list-item.component';
     LikeComponent,
     HelloComponent,
     ListComponent,
-    ListItemComponent
+    ListItemComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule
