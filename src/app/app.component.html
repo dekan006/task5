@@ -1,2 +1,13 @@
+User info: {{user}}
+<br>
+<br>
+Enter name <input type="text" #newUserName (input)=setNewUserName(newUserName.value)>
 
+<button (click)=addUser(newUserName.value)>Add User to List</button>
+<br>
+<br>
+<hr>
+<app-user [user]="user" (userNameChanged)="user = $event"></app-user>
+<br>
+<hr>
 <app-list [userList]="users"></app-list>

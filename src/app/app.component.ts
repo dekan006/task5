@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   users = [
+  user = "Denis";
+ 
+
+  setNewUserName(elem: any) {
+    this.user = elem;
+  }
+
+  
+     users = [
     {
     firstName: 'Ivan',
     lastName: 'Petrov',
@@ -33,4 +41,8 @@ export class AppComponent {
     age: 24,
     }
     ];
+
+    addUser(elem: any) {
+      this.users.push({firstName : elem, lastName: elem, age: elem})
+    }
 }
